@@ -1,0 +1,479 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" target-language="en-US" original="OutOfOfficeProject">
+    <body>
+      <group id="body">
+        <trans-unit id="Codeunit 1919936725 - NamedType 2373809689" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Error with sending e-mail.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit SendEmails - NamedType EmailNotSentLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1919936725 - NamedType 1965701150" size-unit="char" translate="yes" xml:space="preserve">
+          <source>E-mail sent.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit SendEmails - NamedType EmailSentLbl</note>
+        </trans-unit>
+        <trans-unit id="Page 2367996061 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Rejection Reason</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page RejectionReason - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2367996061 - NamedType 2825101645" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Rejection reason must not be empty.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page RejectionReason - NamedType EmptyReasonLbl</note>
+        </trans-unit>
+        <trans-unit id="Page 2367996061 - Control 128273549 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the rejection reason</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page RejectionReason - Control Rejection Reason - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2367996061 - Control 128273549 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Rejection Reason</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page RejectionReason - Control Rejection Reason - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1613631548 - Control 3207102784 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 866835530">
+          <source>Specifies the User Id.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension EmployeesExt - Control UserId - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3864364629 - Field 3207102784 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1498446062">
+          <source>User Id</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension EmployeeExt - Field UserId - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1148391789 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Out of Office Reason</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Out of Office Reason - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1148391789 - Field 3004954119 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Out of Office Reason - Field Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1148391789 - Field 3461834954 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Out of Office Reason - Field Description - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2798799402 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Out of Office Request</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Out of Office Request - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2798799402 - Field 1637095154 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Duration</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Out of Office Request - Field Duration - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2798799402 - Field 1964419135 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Employee No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Out of Office Request - Field Employee No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2798799402 - Field 2649176925 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>End Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Out of Office Request - Field End Date - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2798799402 - Field 4240670190 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>End Time</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Out of Office Request - Field End Time - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2798799402 - Field 329134311 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Entry No</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Out of Office Request - Field Entry No - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2798799402 - Field 2898143332 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Note</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Out of Office Request - Field Note - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2798799402 - Field 1908046867 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Reason Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Out of Office Request - Field Reason Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2798799402 - Field 128273549 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Rejection Reason</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Out of Office Request - Field Rejection Reason - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2798799402 - Field 474480784 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Start Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Out of Office Request - Field Start Date - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2798799402 - Field 2169532623 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Start Time</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Out of Office Request - Field Start Time - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2798799402 - Field 513339096 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Status</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Out of Office Request - Field Status - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2798799402 - Field 513339096 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve">
+          <source>New,In process,Approved,Declined</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Out of Office Request - Field Status - Property OptionCaption</note>
+        </trans-unit>
+        <trans-unit id="Page 1502861028 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Out of Office Reasons</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Out of Office Reasons - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1502861028 - Control 3004954119 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Code field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Out of Office Reasons - Control Code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1502861028 - Control 3461834954 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Description field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Out of Office Reasons - Control Description - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2798799402 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Out of Office Request</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Out of Office Request - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2798799402 - NamedType 141212651" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Request already approved.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Out of Office Request - NamedType ApprovedLbl</note>
+        </trans-unit>
+        <trans-unit id="Page 2798799402 - NamedType 38695774" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Request already declined.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Out of Office Request - NamedType DeclinedLbl</note>
+        </trans-unit>
+        <trans-unit id="Page 2798799402 - NamedType 492971015" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The End date must be later than Start date.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Out of Office Request - NamedType EnDateLbl</note>
+        </trans-unit>
+        <trans-unit id="Page 2798799402 - NamedType 2498863888" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The End time must be later than Start time.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Out of Office Request - NamedType EnTimeLbl</note>
+        </trans-unit>
+        <trans-unit id="Page 2798799402 - NamedType 181944986" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Request already in process.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Out of Office Request - NamedType InProcessLbl</note>
+        </trans-unit>
+        <trans-unit id="Page 2798799402 - NamedType 4229083248" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Request approve.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Out of Office Request - NamedType RequestApproveLbl</note>
+        </trans-unit>
+        <trans-unit id="Page 2798799402 - NamedType 3580520153" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Request decline.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Out of Office Request - NamedType RequestDeclineLbl</note>
+        </trans-unit>
+        <trans-unit id="Page 2798799402 - NamedType 3488908913" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Request in processing.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Out of Office Request - NamedType RequestInProcessLbl</note>
+        </trans-unit>
+        <trans-unit id="Page 2798799402 - NamedType 1361680275" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The Start date must be today or later.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Out of Office Request - NamedType StDateLbl</note>
+        </trans-unit>
+        <trans-unit id="Page 2798799402 - Control 2445482498 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>General</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Out of Office Request - Control General - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2798799402 - Control 1637095154 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Duration field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Out of Office Request - Control Duration - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2798799402 - Control 1964419135 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Employee No. field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Out of Office Request - Control Employee No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2798799402 - Control 2649176925 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the End Date field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Out of Office Request - Control End Date - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2798799402 - Control 4240670190 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the End Time field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Out of Office Request - Control End Time - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2798799402 - Control 329134311 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Entry No field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Out of Office Request - Control Entry No - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2798799402 - Control 2898143332 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Note field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Out of Office Request - Control Note - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2798799402 - Control 1908046867 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Reason Code field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Out of Office Request - Control Reason Code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2798799402 - Control 128273549 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Rejection reason field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Out of Office Request - Control Rejection Reason - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2798799402 - Control 474480784 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Start Date field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Out of Office Request - Control Start Date - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2798799402 - Control 2169532623 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Start Time field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Out of Office Request - Control Start Time - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2798799402 - Control 513339096 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Status field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Out of Office Request - Control Status - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2798799402 - Control 1658766258 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Attachments</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Out of Office Request - Control Attached Documents - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2798799402 - Action 803889193 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the action Approve.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Out of Office Request - Action Approve - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2798799402 - Action 803889193 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Approve</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Out of Office Request - Action Approve - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2798799402 - Action 571736184 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the action Decline.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Out of Office Request - Action Decline - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2798799402 - Action 571736184 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Decline</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Out of Office Request - Action Decline - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2798799402 - Action 3639199485 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the action Start Process.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Out of Office Request - Action Start process - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2798799402 - Action 3639199485 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Start process</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Out of Office Request - Action Start process - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1214148119 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Out of Office Requests</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Out of Office Requests - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1214148119 - NamedType 141212651" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Request already approved.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Out of Office Requests - NamedType ApprovedLbl</note>
+        </trans-unit>
+        <trans-unit id="Page 1214148119 - NamedType 38695774" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Request already declined.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Out of Office Requests - NamedType DeclinedLbl</note>
+        </trans-unit>
+        <trans-unit id="Page 1214148119 - NamedType 181944986" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Request already in process.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Out of Office Requests - NamedType InProcessLbl</note>
+        </trans-unit>
+        <trans-unit id="Page 1214148119 - NamedType 4229083248" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Request approve.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Out of Office Requests - NamedType RequestApproveLbl</note>
+        </trans-unit>
+        <trans-unit id="Page 1214148119 - NamedType 3580520153" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Request decline.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Out of Office Requests - NamedType RequestDeclineLbl</note>
+        </trans-unit>
+        <trans-unit id="Page 1214148119 - NamedType 3488908913" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Request in processing.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Out of Office Requests - NamedType RequestInProcessLbl</note>
+        </trans-unit>
+        <trans-unit id="Page 1214148119 - Control 1637095154 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Duration field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Out of Office Requests - Control Duration - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1214148119 - Control 1964419135 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Employee No. field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Out of Office Requests - Control Employee No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1214148119 - Control 2649176925 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the End Date field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Out of Office Requests - Control End Date - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1214148119 - Control 4240670190 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the End Time field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Out of Office Requests - Control End Time - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1214148119 - Control 329134311 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Entry No field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Out of Office Requests - Control Entry No - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1214148119 - Control 2898143332 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Note field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Out of Office Requests - Control Note - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1214148119 - Control 1908046867 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Reason Code field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Out of Office Requests - Control Reason Code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1214148119 - Control 128273549 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Rejection reason field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Out of Office Requests - Control Rejection Reason - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1214148119 - Control 474480784 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Start Date field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Out of Office Requests - Control Start Date - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1214148119 - Control 2169532623 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Start Time field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Out of Office Requests - Control Start Time - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1214148119 - Control 513339096 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Status field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Out of Office Requests - Control Status - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1214148119 - Control 1658766258 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Attachments</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Out of Office Requests - Control Attached Documents - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1214148119 - Action 803889193 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the action Approve.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Out of Office Requests - Action Approve - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1214148119 - Action 803889193 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Approve</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Out of Office Requests - Action Approve - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1214148119 - Action 571736184 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the action Decline.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Out of Office Requests - Action Decline - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1214148119 - Action 571736184 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Decline</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Out of Office Requests - Action Decline - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1214148119 - Action 2939959675 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Show Requests</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Out of Office Requests - Action ShowRequests - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1214148119 - Action 3955284820 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Show all requests.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Out of Office Requests - Action ShowAllRequests - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1214148119 - Action 3955284820 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Show All Requests</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Out of Office Requests - Action ShowAllRequests - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1214148119 - Action 1986086207 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Show only your requests.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Out of Office Requests - Action ShowMyRequests - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1214148119 - Action 1986086207 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Show My Requests</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Out of Office Requests - Action ShowMyRequests - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1214148119 - Action 3639199485 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the action Start Process.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Out of Office Requests - Action Start process - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1214148119 - Action 3639199485 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Start process</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Out of Office Requests - Action Start process - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1214148119 - Action 1071449659 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the action Print Out of Office Day Count.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Out of Office Requests - Action PrintOutOfOfficeDayCount - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1214148119 - Action 1071449659 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Print Out of Office Day Count</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Out of Office Requests - Action PrintOutOfOfficeDayCount - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 3555613996 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Out of Office Day Count</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Out of Office Day Count - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 3555613996 - Control 2346885236 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Options</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Out of Office Day Count - Control Options - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 3555613996 - Control 845401037 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the date to which the report processes information.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Out of Office Day Count - Control EndDate - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Report 3555613996 - Control 845401037 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>End Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Out of Office Day Count - Control EndDate - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 3555613996 - Control 3605153064 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the date from which the report processes information.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Out of Office Day Count - Control StartDate - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Report 3555613996 - Control 3605153064 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Start Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Out of Office Day Count - Control StartDate - Property Caption</note>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

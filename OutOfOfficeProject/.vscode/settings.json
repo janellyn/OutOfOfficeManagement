@@ -1,0 +1,13 @@
+{
+    "al.codeAnalyzers": [
+        "${CodeCop}"
+    ],
+    "al.enableCodeAnalysis": true,
+    "al.backgroundCodeAnalysis": "Project",
+    "al.ruleSetPath": "./sma.ruleset.json",
+    "CRS.FileNamePattern": "<ObjectNameShort>.<ObjectTypeShortPascalCase>.al",
+    "CRS.FileNamePatternExtensions": "<ObjectNameShort>.<ObjectTypeShortPascalCase>.al",
+    "CRS.ObjectNamePrefix": "SMA",
+    "CRS.RemovePrefixFromFilename": true,
+    "al.outputAnalyzerStatistics": true,
+}
