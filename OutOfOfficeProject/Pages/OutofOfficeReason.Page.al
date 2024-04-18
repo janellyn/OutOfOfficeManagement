@@ -1,19 +1,20 @@
-page 60000 "Out of Office Reasons"
+namespace OutOfOfficeProject.OutOfOfficeProject;
+
+page 60004 "Out of Office Reason"
 {
     ApplicationArea = All;
-    Caption = 'Out of Office Reasons';
-    PageType = List;
-    UsageCategory = Lists;
+    Caption = 'Out of Office Reason';
+    PageType = Card;
     SourceTable = "Out of Office Reason";
-    CardPageId = "Out of Office Reason";
-    Editable = false;
 
     layout
     {
         area(content)
         {
-            repeater(General)
+            group(General)
             {
+                Caption = 'General';
+
                 field("Code"; Rec."Code")
                 {
                     ToolTip = 'Specifies the value of the Code field.';

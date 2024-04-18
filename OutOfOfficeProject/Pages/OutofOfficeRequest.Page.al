@@ -13,9 +13,9 @@ page 60002 "Out of Office Request"
             {
                 Caption = 'General';
                 Editable = (not AccessByUserId) and (Rec.Status = Rec.Status::New);
-                field("Entry No"; Rec."Entry No")
+                field("Entry No"; Rec."No.")
                 {
-                    ToolTip = 'Specifies the value of the Entry No field.';
+                    ToolTip = 'Specifies the value of the No. field.';
                     Visible = false;
                 }
                 field("Employee No."; Rec."Employee No.")
@@ -114,8 +114,8 @@ page 60002 "Out of Office Request"
             {
                 ApplicationArea = All;
                 Caption = 'Attachments';
-                SubPageLink = "Table ID" = CONST(60001),
-                "No." = FIELD("Entry No");
+                SubPageLink = "Table ID" = const(60001),
+                "No." = field("No.");
             }
             systempart(PaymentTermsLinks; Links)
             {
@@ -136,19 +136,12 @@ page 60002 "Out of Office Request"
                 Caption = 'Start process';
                 ToolTip = 'Specifies the action Start Process.';
                 Visible = AccessByUserId;
+                Enabled = Enabled and EnabledProcess;
                 Image = Start;
 
                 trigger OnAction()
                 begin
-                    if Rec.Status = Rec.Status::"In process" then
-                        Message(InProcessLbl)
-                    else begin
-                        Rec.SetRange("Entry No", Rec."Entry No");
-                        Rec.Status := Rec.Status::"In process";
-                        Clear(Rec."Rejection Reason");
-                        Message(RequestInProcessLbl);
-                        Rec.Modify();
-                    end;
+                    ChangeStatus(RequestInProcessLbl, Rec.Status::"In process");
                 end;
             }
             action("Approve")
@@ -156,22 +149,12 @@ page 60002 "Out of Office Request"
                 Caption = 'Approve';
                 ToolTip = 'Specifies the action Approve.';
                 Visible = AccessByUserId;
+                Enabled = Enabled;
                 Image = Approve;
 
                 trigger OnAction()
-                var
-                    SendEmails: Codeunit SendEmails;
                 begin
-                    if Rec.Status = Rec.Status::Approved then
-                        Message(ApprovedLbl)
-                    else begin
-                        Rec.SetRange("Entry No", Rec."Entry No");
-                        Rec.Status := Rec.Status::Approved;
-                        Clear(Rec."Rejection Reason");
-                        Message(RequestApproveLbl);
-                        SendEmails.ApprovalEmail(Rec);
-                        Rec.Modify();
-                    end;
+                    ChangeStatus(RequestApproveLbl, Rec.Status::Approved);
                 end;
             }
             action("Decline")
@@ -179,27 +162,17 @@ page 60002 "Out of Office Request"
                 Caption = 'Decline';
                 ToolTip = 'Specifies the action Decline.';
                 Visible = AccessByUserId;
+                Enabled = Enabled;
                 Image = Reject;
 
                 trigger OnAction()
                 var
-                    SendEmails: Codeunit SendEmails;
                     RejectionReasonPage: Page RejectionReason;
                 begin
-                    if Rec.Status = Rec.Status::Declined then
-                        Message(DeclinedLbl)
-                    else begin
-                        RejectionReasonPage.RunModal();
-
-                        Rec.SetRange("Entry No", Rec."Entry No");
-                        Rec."Rejection Reason" := RejectionReasonPage.Set();
-                        if Rec."Rejection Reason" <> '' then begin
-                            Rec.Status := Rec.Status::Declined;
-                            Message(RequestDeclineLbl);
-                            SendEmails.DeclinedEmail(Rec);
-                        end;
-                        Rec.Modify();
-                    end;
+                    RejectionReasonPage.RunModal();
+                    Rec."Rejection Reason" := RejectionReasonPage.Set();
+                    if Rec."Rejection Reason" <> '' then
+                        ChangeStatus(RequestDeclineLbl, Rec.Status::Declined);
                 end;
             }
         }
@@ -212,11 +185,10 @@ page 60002 "Out of Office Request"
         RequestInProcessLbl: Label 'Request in processing.';
         RequestApproveLbl: Label 'Request approve.';
         RequestDeclineLbl: Label 'Request decline.';
-        InProcessLbl: Label 'Request already in process.';
-        ApprovedLbl: Label 'Request already approved.';
-        DeclinedLbl: Label 'Request already declined.';
         AccessByUserId: Boolean;
         StyleExprTxt: Text[50];
+        Enabled: Boolean;
+        EnabledProcess: Boolean;
 
     trigger OnOpenPage()
     begin
@@ -225,31 +197,40 @@ page 60002 "Out of Office Request"
 
     trigger OnAfterGetRecord()
     begin
+        Enabled := false;
+        EnabledProcess := false;
+        StyleExprTxt := 'standard';
+
         case Rec.Status of
             Rec.Status::Approved:
                 StyleExprTxt := 'favorable';
             Rec.Status::Declined:
                 StyleExprTxt := 'unfavorable';
-            else
-                StyleExprTxt := 'standard';
+            Rec.Status::"In process":
+                Enabled := true;
+            Rec.Status::New:
+                begin
+                    Enabled := true;
+                    EnabledProcess := true;
+                end;
         end;
     end;
 
     trigger OnNewRecord(BelowxRec: Boolean)
     var
         Employee: Record Employee;
-        OutOfOfficeRequest: Record "Out of Office Request";
-        TempInt: Integer;
-        MaxInt: Integer;
+    //OutOfOfficeRequest: Record "Out of Office Request";
+    //TempInt: Integer;
+    //MaxInt: Integer;
     begin
-        MaxInt := 0;
+        /*MaxInt := 0;
         if OutOfOfficeRequest.FindSet() then
             repeat
-                Evaluate(TempInt, OutOfOfficeRequest."Entry No");
+                Evaluate(TempInt, OutOfOfficeRequest."No.");
                 if TempInt > MaxInt then
                     MaxInt := TempInt;
             until OutOfOfficeRequest.NEXT() = 0;
-        Evaluate(Rec."Entry No", Format(MaxInt + 1));
+        Evaluate(Rec."No.", Format(MaxInt + 1));*/
 
         Employee.SetRange(UserID, UserSecurityId());
         if Employee.FindFirst() then
@@ -257,6 +238,23 @@ page 60002 "Out of Office Request"
 
         Rec."Start Date" := DT2Date(CurrentDateTime());
         Rec."End Date" := DT2Date(CurrentDateTime());
+        Rec.Modify();
+    end;
+
+    procedure ChangeStatus(ChangedLbl: Text; StatusOption: Option)
+    var
+        SendEmails: Codeunit SendEmails;
+    begin
+        Rec.Status := StatusOption;
+        if StatusOption <> Rec.Status::Declined then
+            Clear(Rec."Rejection Reason");
+        Message(ChangedLbl);
+
+        if StatusOption = Rec.Status::Approved then
+            SendEmails.ApprovalEmail(Rec);
+        if StatusOption = Rec.Status::Declined then
+            SendEmails.DeclinedEmail(Rec);
+
         Rec.Modify();
     end;
 

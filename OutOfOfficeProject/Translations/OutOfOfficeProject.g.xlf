@@ -13,6 +13,26 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit SendEmails - NamedType EmailSentLbl</note>
         </trans-unit>
+        <trans-unit id="Page 1148391789 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Out of Office Reason</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Out of Office Reason - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1148391789 - Control 2445482498 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>General</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Out of Office Reason - Control General - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1148391789 - Control 3004954119 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Code field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Out of Office Reason - Control Code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1148391789 - Control 3461834954 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Description field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Out of Office Reason - Control Description - Property ToolTip</note>
+        </trans-unit>
         <trans-unit id="Page 2367996061 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Rejection Reason</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -38,10 +58,25 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension EmployeesExt - Control UserId - Property ToolTip</note>
         </trans-unit>
+        <trans-unit id="PageExtension 75599158 - Control 321140734 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4145206282">
+          <source>Specifies number of series Out of Office Request Nos.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension SalesReceivablesSetupPageExt - Control OutOfOffice Request Nos. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 75599158 - Control 321140734 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4145206282">
+          <source>Out of Office Request Nos.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension SalesReceivablesSetupPageExt - Control OutOfOffice Request Nos. - Property Caption</note>
+        </trans-unit>
         <trans-unit id="TableExtension 3864364629 - Field 3207102784 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1498446062">
           <source>User Id</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension EmployeeExt - Field UserId - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2647506971 - Field 321140734 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 4145206282">
+          <source>Out of Office Request Nos.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension SalesReceivablesSetupExt - Field OutOfOffice Request Nos. - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 1148391789 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Out of Office Reason</source>
@@ -83,10 +118,15 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table Out of Office Request - Field End Time - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Table 2798799402 - Field 329134311 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Entry No</source>
+        <trans-unit id="Table 2798799402 - Field 4200184881 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>No.</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table Out of Office Request - Field Entry No - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Out of Office Request - Field No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2798799402 - Field 1351594800 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>No. Series</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Out of Office Request - Field No. Series - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 2798799402 - Field 2898143332 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Note</source>
@@ -143,16 +183,6 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page Out of Office Request - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Page 2798799402 - NamedType 141212651" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Request already approved.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Out of Office Request - NamedType ApprovedLbl</note>
-        </trans-unit>
-        <trans-unit id="Page 2798799402 - NamedType 38695774" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Request already declined.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Out of Office Request - NamedType DeclinedLbl</note>
-        </trans-unit>
         <trans-unit id="Page 2798799402 - NamedType 492971015" size-unit="char" translate="yes" xml:space="preserve">
           <source>The End date must be later than Start date.</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -162,11 +192,6 @@
           <source>The End time must be later than Start time.</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page Out of Office Request - NamedType EnTimeLbl</note>
-        </trans-unit>
-        <trans-unit id="Page 2798799402 - NamedType 181944986" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Request already in process.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Out of Office Request - NamedType InProcessLbl</note>
         </trans-unit>
         <trans-unit id="Page 2798799402 - NamedType 4229083248" size-unit="char" translate="yes" xml:space="preserve">
           <source>Request approve.</source>
@@ -214,7 +239,7 @@
           <note from="Xliff Generator" annotates="general" priority="3">Page Out of Office Request - Control End Time - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 2798799402 - Control 329134311 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the value of the Entry No field.</source>
+          <source>Specifies the value of the No. field.</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page Out of Office Request - Control Entry No - Property ToolTip</note>
         </trans-unit>
@@ -288,21 +313,6 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page Out of Office Requests - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Page 1214148119 - NamedType 141212651" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Request already approved.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Out of Office Requests - NamedType ApprovedLbl</note>
-        </trans-unit>
-        <trans-unit id="Page 1214148119 - NamedType 38695774" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Request already declined.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Out of Office Requests - NamedType DeclinedLbl</note>
-        </trans-unit>
-        <trans-unit id="Page 1214148119 - NamedType 181944986" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Request already in process.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Out of Office Requests - NamedType InProcessLbl</note>
-        </trans-unit>
         <trans-unit id="Page 1214148119 - NamedType 4229083248" size-unit="char" translate="yes" xml:space="preserve">
           <source>Request approve.</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -339,7 +349,7 @@
           <note from="Xliff Generator" annotates="general" priority="3">Page Out of Office Requests - Control End Time - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 1214148119 - Control 329134311 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the value of the Entry No field.</source>
+          <source>Specifies the value of the No. field.</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page Out of Office Requests - Control Entry No - Property ToolTip</note>
         </trans-unit>

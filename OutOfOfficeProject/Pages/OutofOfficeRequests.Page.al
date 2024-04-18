@@ -15,9 +15,9 @@ page 60001 "Out of Office Requests"
         {
             repeater(General)
             {
-                field("Entry No"; Rec."Entry No")
+                field("Entry No"; Rec."No.")
                 {
-                    ToolTip = 'Specifies the value of the Entry No field.';
+                    ToolTip = 'Specifies the value of the No. field.';
                     Visible = false;
                 }
                 field("Employee No."; Rec."Employee No.")
@@ -71,7 +71,7 @@ page 60001 "Out of Office Requests"
                 ApplicationArea = All;
                 Caption = 'Attachments';
                 SubPageLink = "Table ID" = const(60001),
-                "No." = field("Entry No");
+                "No." = field("No.");
             }
             systempart(PaymentTermsLinks; Links)
             {
@@ -127,24 +127,12 @@ page 60001 "Out of Office Requests"
                 Caption = 'Start process';
                 ToolTip = 'Specifies the action Start Process.';
                 Visible = AccessByUserId;
+                Enabled = Enabled and EnabledProcess;
                 Image = Start;
 
                 trigger OnAction()
                 begin
-                    if Rec.Status = Rec.Status::"In process" then
-                        Message(InProcessLbl)
-                    else begin
-                        Rec.SetRange("Entry No", Rec."Entry No");
-                        Rec.Status := Rec.Status::"In process";
-                        Clear(Rec."Rejection Reason");
-                        Message(RequestInProcessLbl);
-                        Rec.Modify();
-                        Clear(Rec);
-                        SetupFilters();
-                        Rec.FIND('-');
-                        Rec.SetCurrentKey(Status);
-                        Rec.SetAscending(Status, true);
-                    end;
+                    ChangeStatus(RequestInProcessLbl, Rec.Status::"In process");
                 end;
             }
             action("Approve")
@@ -152,27 +140,12 @@ page 60001 "Out of Office Requests"
                 Caption = 'Approve';
                 ToolTip = 'Specifies the action Approve.';
                 Visible = AccessByUserId;
+                Enabled = Enabled;
                 Image = Approve;
 
                 trigger OnAction()
-                var
-                    SendEmails: Codeunit SendEmails;
                 begin
-                    if Rec.Status = Rec.Status::Approved then
-                        Message(ApprovedLbl)
-                    else begin
-                        Rec.SetRange("Entry No", Rec."Entry No");
-                        Rec.Status := Rec.Status::Approved;
-                        Clear(Rec."Rejection Reason");
-                        Message(RequestApproveLbl);
-                        SendEmails.ApprovalEmail(Rec);
-                        Rec.Modify();
-                        Clear(Rec);
-                        SetupFilters();
-                        Rec.FIND('-');
-                        Rec.SetCurrentKey(Status);
-                        Rec.SetAscending(Status, true);
-                    end;
+                    ChangeStatus(RequestApproveLbl, Rec.Status::Approved);
                 end;
             }
             action("Decline")
@@ -180,33 +153,18 @@ page 60001 "Out of Office Requests"
                 Caption = 'Decline';
                 ToolTip = 'Specifies the action Decline.';
                 Visible = AccessByUserId;
+                Enabled = Enabled;
                 Image = Reject;
 
                 trigger OnAction()
                 var
-                    SendEmails: Codeunit SendEmails;
                     RejectionReasonPage: Page RejectionReason;
                 begin
-                    if Rec.Status = Rec.Status::Declined then
-                        Message(DeclinedLbl)
-                    else begin
-                        RejectionReasonPage.RunModal();
-
-                        Rec.SetRange("Entry No", Rec."Entry No");
-                        Rec."Rejection Reason" := RejectionReasonPage.Set();
-                        if Rec."Rejection Reason" <> '' then begin
-                            Rec.Status := Rec.Status::Declined;
-                            Message(RequestDeclineLbl);
-                            SendEmails.DeclinedEmail(Rec);
-                        end;
-                        Rec.Modify();
-
-                        Clear(Rec);
-                        SetupFilters();
-                        Rec.FIND('-');
-                        Rec.SetCurrentKey(Status);
-                        Rec.SetAscending(Status, true);
-                    end;
+                    RejectionReasonPage.RunModal();
+                    Rec.SetRange("No.", Rec."No.");
+                    Rec."Rejection Reason" := RejectionReasonPage.Set();
+                    if Rec."Rejection Reason" <> '' then
+                        ChangeStatus(RequestDeclineLbl, Rec.Status::Declined);
                 end;
             }
         }
@@ -237,9 +195,8 @@ page 60001 "Out of Office Requests"
         RequestApproveLbl: Label 'Request approve.';
         RequestDeclineLbl: Label 'Request decline.';
         StyleExprTxt: Text[50];
-        InProcessLbl: Label 'Request already in process.';
-        ApprovedLbl: Label 'Request already approved.';
-        DeclinedLbl: Label 'Request already declined.';
+        Enabled: Boolean;
+        EnabledProcess: Boolean;
 
     trigger OnOpenPage()
     begin
@@ -248,14 +205,46 @@ page 60001 "Out of Office Requests"
 
     trigger OnAfterGetRecord()
     begin
+        Enabled := false;
+        EnabledProcess := false;
+        StyleExprTxt := 'standard';
+
         case Rec.Status of
             Rec.Status::Approved:
                 StyleExprTxt := 'favorable';
             Rec.Status::Declined:
                 StyleExprTxt := 'unfavorable';
-            else
-                StyleExprTxt := 'standard';
+            Rec.Status::"In process":
+                Enabled := true;
+            Rec.Status::New:
+                begin
+                    Enabled := true;
+                    EnabledProcess := true;
+                end;
         end;
+    end;
+
+    procedure ChangeStatus(ChangedLbl: Text; StatusOption: Option)
+    var
+        SendEmails: Codeunit SendEmails;
+    begin
+        Rec.SetRange("No.", Rec."No.");
+        Rec.Status := StatusOption;
+        if StatusOption <> Rec.Status::Declined then
+            Clear(Rec."Rejection Reason");
+        Message(ChangedLbl);
+
+        if StatusOption = Rec.Status::Approved then
+            SendEmails.ApprovalEmail(Rec);
+        if StatusOption = Rec.Status::Declined then
+            SendEmails.DeclinedEmail(Rec);
+
+        Rec.Modify();
+        Clear(Rec);
+        SetupFilters();
+        Rec.FIND('-');
+        Rec.SetCurrentKey(Status);
+        Rec.SetAscending(Status, true);
     end;
 
     procedure SetupFilters()

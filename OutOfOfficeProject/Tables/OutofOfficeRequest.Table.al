@@ -6,9 +6,18 @@ table 60001 "Out of Office Request"
 
     fields
     {
-        field(10; "Entry No"; Code[10])
+        field(10; "No."; Code[10])
         {
-            Caption = 'Entry No';
+            Caption = 'No.';
+
+            trigger OnValidate()
+            begin
+                if "No." <> xRec."No." then begin
+                    SalesSetup.Get();
+                    NoSeriesMgt.TestManual(SalesSetup."OutOfOffice Request Nos.");
+                    "No. Series" := '';
+                end;
+            end;
         }
         field(20; "Employee No."; Code[20])
         {
@@ -59,10 +68,16 @@ table 60001 "Out of Office Request"
         {
             Caption = 'Rejection Reason';
         }
+        field(110; "No. Series"; Code[20])
+        {
+            Caption = 'No. Series';
+            Editable = false;
+            TableRelation = "No. Series";
+        }
     }
     keys
     {
-        key(PK; "Entry No")
+        key(PK; "No.")
         {
             Clustered = true;
         }
@@ -71,4 +86,18 @@ table 60001 "Out of Office Request"
             Clustered = false;
         }
     }
+
+    trigger OnInsert()
+    var
+    begin
+        if "No." = '' then begin
+            SalesSetup.Get();
+            SalesSetup.TestField("OutOfOffice Request Nos.");
+            NoSeriesMgt.InitSeries(SalesSetup."OutOfOffice Request Nos.", xRec."No. Series", 0D, "No.", "No. Series");
+        end;
+    end;
+
+    var
+        SalesSetup: Record "Sales & Receivables Setup";
+        NoSeriesMgt: Codeunit NoSeriesManagement;
 }
